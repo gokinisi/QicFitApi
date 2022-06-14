@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework> 
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Setup\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.IdentityManagementCore\Common.IdentityManagementCore.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Utils\Common.Utils.csproj" />
+    <ProjectReference Include="..\..\Common\Common.WebApiCore\Common.WebApiCore.csproj" />
+    <ProjectReference Include="..\QicFit.DIContainerCore\QicFit.DIContainerCore.csproj" />
+    <ProjectReference Include="..\QicFit.Services.Infrastructure\QicFit.Services.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Templates\PreLaunchEmail.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

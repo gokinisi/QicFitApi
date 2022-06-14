@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.5.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.Services\Common.Services.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Utils\Common.Utils.csproj" />
+    <ProjectReference Include="..\QicFit.Services.Infrastructure\QicFit.Services.Infrastructure.csproj" />
+    <ProjectReference Include="..\QicFit.Services.Infrastructure\QicFit.Services.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

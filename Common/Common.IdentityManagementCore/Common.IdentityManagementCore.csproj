@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Common.Entities\Common.Entities.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\Common.Services.Infrastructure\Common.Services.Infrastructure.csproj" ReferenceOutputAssembly="true" />
+    <ProjectReference Include="..\Common.Utils\Common.Utils.csproj" ReferenceOutputAssembly="true" />
+  </ItemGroup>
+
+</Project>

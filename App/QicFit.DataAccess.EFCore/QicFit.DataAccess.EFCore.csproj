@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>QicFit.DataAccess.EFCore</AssemblyName>
+    <RootNamespace>QicFit.DataAccess.EFCore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200312160056_update-fitness-level.cs" />
+    <Compile Remove="Migrations\20200312160056_update-fitness-level.Designer.cs" />
+    <Compile Remove="Migrations\20200321131645_location.cs" />
+    <Compile Remove="Migrations\20200321131645_location.Designer.cs" />
+    <Compile Remove="Migrations\20200321134546_CityState.cs" />
+    <Compile Remove="Migrations\20200321134546_CityState.Designer.cs" />
+    <Compile Remove="Migrations\20200515191745_updated-genderid.cs" />
+    <Compile Remove="Migrations\20200515191745_updated-genderid.Designer.cs" />
+    <Compile Remove="Migrations\20200706193906_add-settings-userloc-relations.cs" />
+    <Compile Remove="Migrations\20200706193906_add-settings-userloc-relations.Designer.cs" />
+    <Compile Remove="Migrations\20200706200439_change-user-location.cs" />
+    <Compile Remove="Migrations\20200706200439_change-user-location.Designer.cs" />
+    <Compile Remove="Migrations\20200718133528_rename-location.cs" />
+    <Compile Remove="Migrations\20200718133528_rename-location.Designer.cs" />
+    <Compile Remove="Migrations\20200718134251_rename-location.cs" />
+    <Compile Remove="Migrations\20200718134251_rename-location.Designer.cs" />
+    <Compile Remove="Migrations\20200719143701_workout-location.cs" />
+    <Compile Remove="Migrations\20200719143701_workout-location.Designer.cs" />
+    <Compile Remove="Migrations\20200719150931_workout-location.cs" />
+    <Compile Remove="Migrations\20200719150931_workout-location.Designer.cs" />
+    <Compile Remove="Migrations\20200719151540_workout-location.cs" />
+    <Compile Remove="Migrations\20200719151540_workout-location.Designer.cs" />
+    <Compile Remove="Migrations\20200719152434_workout-location.cs" />
+    <Compile Remove="Migrations\20200719152434_workout-location.Designer.cs" />
+    <Compile Remove="Migrations\20200719195316_add-user-locations.cs" />
+    <Compile Remove="Migrations\20200719195316_add-user-locations.Designer.cs" />
+    <Compile Remove="Migrations\20200719200441_add-user-locations.cs" />
+    <Compile Remove="Migrations\20200719200441_add-user-locations.Designer.cs" />
+    <Compile Remove="Migrations\20200723133645_fitness-level-group.cs" />
+    <Compile Remove="Migrations\20200723133645_fitness-level-group.Designer.cs" />
+    <Compile Remove="Migrations\20200723135016_fitness-level-group.cs" />
+    <Compile Remove="Migrations\20200723135016_fitness-level-group.Designer.cs" />
+    <Compile Remove="Migrations\20200805104226_fixed-uwer-location.cs" />
+    <Compile Remove="Migrations\20200805104226_fixed-uwer-location.Designer.cs" />
+    <Compile Remove="Migrations\20200809180017_workouttype-fitnesslevel.cs" />
+    <Compile Remove="Migrations\20200809180017_workouttype-fitnesslevel.Designer.cs" />
+    <Compile Remove="Migrations\20200810105747_remove-fitnesslevelGroup.cs" />
+    <Compile Remove="Migrations\20200810105747_remove-fitnesslevelGroup.Designer.cs" />
+    <Compile Remove="Migrations\20200818125347_prenotification.cs" />
+    <Compile Remove="Migrations\20200818125347_prenotification.Designer.cs" />
+    <Compile Remove="Migrations\20200820123851_add-notification-id.cs" />
+    <Compile Remove="Migrations\20200820123851_add-notification-id.Designer.cs" />
+    <Compile Remove="Migrations\20200820125458_add-notification-id.cs" />
+    <Compile Remove="Migrations\20200820125458_add-notification-id.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\Common.DataAccess.EFCore\Common.DataAccess.EFCore.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Entities\Common.Entities.csproj" />
+    <ProjectReference Include="..\..\Common\Common.Utils\Common.Utils.csproj" />
+    <ProjectReference Include="..\QicFit.Services.Infrastructure\QicFit.Services.Infrastructure.csproj" />
+  </ItemGroup>
+</Project>
